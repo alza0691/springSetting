@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="board">
+	<select id="selectList" resultType="timeTable">
+		select
+			lecture_no as lectureNo
+			, lecture_day as lectureDay
+			, lecture_time as lectureTime
+			, lecture_start_time as lectureStartTime
+			, lecture_end_time as lectureEndTime
+			, lecture_lecturer as lectureLecturer
+			, lecture_room as lectureRoom
+		from lecture
+	</select>
+</mapper>
